@@ -1,0 +1,15 @@
+<div class="main" dropDownMain #firstDrop="mainDrop" (result)="result('first', $event)">
+    <p>main</p>
+</div>
+
+<div class="main" dropDownMain #secondDrop="mainDrop" (result)="result('second', $event)">
+    <p>main</p>
+</div>
+
+<div class="item" [withItem]="firstDrop">
+    <p>привет1</p>
+</div>
+
+<div class="item" [withItem]="secondDrop">
+    <p>привет2</p>
+</div>
