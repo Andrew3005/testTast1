@@ -1,19 +1,19 @@
-<div ngbDropdown>
-    <div ngbDropdownToggle class="main" (result)="result('second', $event)">
-        <p>main</p>
+<div>
+    <div dropDownMain #firstDrop="mainDrop" result="result('first', $event)" class="main">
+        <p>(click me!)</p>
     </div>
 
-    <div ngbDropdownMenu class="item">
-        <p>привет1</p>
+    <div [withItem]="firstDrop" class="item">
+        <p>(hello)</p>
     </div>
 </div>
 
-<div ngbDropdown>
-    <div ngbDropdownToggle class="main" (result)="result('second', $event)">
-        <p>main</p>
+<div>
+    <div dropDownMain #secondDrop="mainDrop" class="main">
+        <p>(clickMe:)</p>
     </div>
 
-    <div ngbDropdownMenu class="item">
-        <p>привет2</p>
+    <div [withItem]="secondDrop" class="item">
+        <p>(howAreYou?)</p>
     </div>
 </div>

@@ -1,6 +1,6 @@
 .main {
     border: 2px solid grey;
-    width: 50px;
+    width: 100px;
     border-radius: 5px;
 }
 
@@ -8,6 +8,6 @@
     padding: 5px 5px;
 }
 
-.qqq {
-    background-color: green;
+.item {
+    display: none;
 }
